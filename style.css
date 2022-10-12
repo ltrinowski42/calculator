@@ -1,56 +1,56 @@
-/*Calculator Body*/
-.calc-body {
-    width: 275px;
-    margin: auto;
-    min-height: 400px;
-    box-shadow: 0 8px 50px -7px black;
-    background: #3A4655;
-}
-/*Calculator Display Screen*/
-.calc-screen {
-    padding: 1rem;
-}
-#calc-operation {
-    font-size: 1.3rem;
-    text-align: right;
-    color: #727B86;
-    padding-bottom: .5rem;
-}
-#calc-typed {
-    font-size: 2rem;
-    text-align: right;
-    color: #fff;
-}
-/*Calculator Buttons*/
-.calc-button-row{
-    display: table;
-}
-.calc-button-row button {
-    display: table-cell;
-    width: 25%;
-    background: #425062;
-    color: #fff;
-    height: 65px;
-    font-size: 1.3rem;
+.calculator {
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    margin-block-start: 2em;
+    max-inline-size: 22rem;
+    overflow: hidden;
+    color: hsl(202, 11%, 29%);
+  }
+  .calculator__output {
+    background: hsl(255, 100%, 100%);
+    font-size: 4.2rem;
+    padding-block-start: 3rem;
+    padding-block-end: 0.5rem;
+    padding-inline-end: 1.25rem;
+    text-align: end;
+  }
+  .calculator__keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+    background: hsl(255, 100%, 100%);
+    padding: 0.5rem;
+  }
+  .calculator__key {
+    background: hsl(210, 25%, 95%);
     border: none;
-    border-color:#3C4857;
-    border-width: 1px 1px 0px 0;
-    border-style: solid;
-}
-.calc-button-row button.ac {
-    color: #ff7665;
-}
-.calc-button-row button.opt {
-    color: #ffbc56;
-}
-/*The border has been managed in every fourth button so that the design will not distract.*/
-.calc-button-row button:nth-child(4n){
-    border-right: none;
-}
-.calc-button-row button:active {
-    position: relative;
-    top: 1px;
-}
-.calc-button-row button:hover {
-    background: #3e4b5c;
-}
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
+    padding-inline-end: 1.25rem;
+    padding-inline-start: 1.25rem;
+    font-size: 1.5rem;
+    /* Playful Styles */
+    inline-size: 70px;
+    block-size: 70px;
+    margin: 0.25rem;
+    border-radius: 40px;
+  }
+  .calculator__key:active,
+  .calculator__key:focus {
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3) inset;
+    outline: none;
+  }
+  .calculator__key--operator {
+    background: hsl(208, 25%, 86%);
+  }
+  .calculator__key--operator:active {
+    background: hsl(208, 24%, 80%);
+  }
+  .calculator__key--enter {
+    grid-column: 4 / 5;
+    grid-row: 2 / span 4;
+    background: hsl(357, 100%, 72%);
+    height: auto;
+  }

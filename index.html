@@ -4,41 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"></rel>
     <title>calculator</title>
 </head>
 <body>
- <!-- Calculator Body -->
-<div class="calc-body">
-
-    <!-- Calculator Display Screen -->
-    <div class="calc-screen">
-        <div id="calc-operation">1234 + 567 + </div>
-        <div id="calc-typed">890</div>
-    </div>
-    
-    <!-- Calculator Buttons -->
-    <div class="calc-button-row">
-        <button class="ac">AC</button>
-        <button class="opt">&#43;&#47;&#8722;</button>
-        <button class="opt">&#37;</button>
-        <button class="opt">&#247;</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button class="opt">&#215;</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button class="opt">&#8722;</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button class="opt">&#43;</button>
-        <button>0</button>
-        <button>.</button>
-        <button>&#9003;</button>
-        <button class="opt">&#61;</button>
-    </div>
-    </div>
+    <div class="calculator">
+        <div class="calculator__output">0</div>
+        <div class="calculator__keys">
+          <button class="calculator__key calculator__key--operator">+</button>
+          <button class="calculator__key calculator__key--operator">-</button>
+          <button class="calculator__key calculator__key--operator">&times;</button>
+          <button class="calculator__key calculator__key--operator">÷</button>
+          <button class="calculator__key">7</button>
+          <button class="calculator__key">8</button>
+          <button class="calculator__key">9</button>
+          <button class="calculator__key">4</button>
+          <button class="calculator__key">5</button>
+          <button class="calculator__key">6</button>
+          <button class="calculator__key">1</button>
+          <button class="calculator__key">2</button>
+          <button class="calculator__key">3</button>
+          <button class="calculator__key">0</button>
+          <button class="calculator__key">.</button>
+          <button class="calculator__key">AC</button>
+          <button class="calculator__key calculator__key--enter">=</button>
+        </div>
+      </div>
 </body>
 </html>
